@@ -108,10 +108,15 @@ export default function App() {
                   </div>
                 )}
               </p>
-              <p className="feel text-6xl">
-                {feel !== null ? `${feel}°C` : ""}<br/>
-                <p className="text-lg">Feels like:</p>
-              </p>
+              <div className="feel">
+                <p className="text-6xl">
+                  {feel !== null ? `${feel}°C` : ""}
+                </p>
+
+                <p className="text-lg">
+                  Feels like
+                </p>
+              </div>
             </div>
             <p className="relative top-[25px]">
               {weather
@@ -136,7 +141,15 @@ export default function App() {
         <div className="wrap">
           {weatherData && (
             <div>
-              <p className="text-6xl flex">{weatherData.name}<p>{checkDay()}</p> .</p>
+              <div className="flex items-center gap-2">
+                <h1 className="text-6xl font-bold">
+                  {weatherData.name}
+                </h1>
+
+                <span className="text-xl">
+                {checkDay()}
+                </span>
+              </div>
             </div>
           )}
           <p className="hmmmm">
