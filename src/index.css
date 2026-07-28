@@ -129,7 +129,7 @@ button:active{
 @media (max-width: 768px){
 
   .big-wrap{
-    flex-direction: column !important;
+    flex-direction: column;
   }
 
   .wrap{
@@ -141,4 +141,41 @@ button:active{
     padding: 20px;
   }
 
+}
+@media (min-width: 2200px) and (max-width:2500px) {
+   .big-wrap{
+    flex-direction: column;
+  }
+  .font-bold{
+      font-size: 100px;
+    }
+  .text-6xl{
+    font-size: 100px;
+  }
+  .text-lg{
+    font-size: 50px;
+  }
+  .relative{
+    font-size: 50px;
+  }
+  .text-2xl{
+    font-size: 50px;
+  }
+  button{
+    font-size: 50px;
+  }
+  .Navy>div>button{
+    height: 70px;
+  }
+  .tur{
+    height: 65vh;
+  }
+  .wrap{
+    width: 90%;
+    margin: 20px auto;
+    left: 0;
+    top: 0;
+    height: auto;
+    padding: 20px;
+  }
 }

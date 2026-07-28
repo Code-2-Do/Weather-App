@@ -138,7 +138,7 @@ export default function App() {
 
           </div>
         </div>
-        <div className="wrap">
+        <div className="wrap tur">
           {weatherData && (
             <div>
               <div className="flex items-center gap-2">
