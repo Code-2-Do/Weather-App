@@ -111,11 +111,6 @@ button:active{
 .bruhhhhhhh{
   transition: background-position 0.6s ease-in-out;
 }
-@media (min-width:600px) and (max-width:700px){
-  .text-5xl{
-    font-size: medium;
-  }
-}
 @media (max-width:480px){
 
     .wrap{
@@ -135,9 +130,6 @@ button:active{
 
   .big-wrap{
     flex-direction: column !important;
-  }
-  body{
-    background:red !important;
   }
 
   .wrap{
