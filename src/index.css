@@ -17,10 +17,10 @@ body{
 body{
   background-color: #111;
   color: var(--color);
-  background-image: url("src/components/23643966790090249.jpg");
-  background-position-y: center;
-  background-repeat: no-repeat;
+   background-image: url("./components/23643966790090249.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 input{
   padding: 5px;
