@@ -61,9 +61,9 @@ export default function App() {
   const currentTime = weatherData.dt;
 
   if (currentTime >= sunrise && currentTime <= sunset) {
-    return "🌞";   // daytime with sun emoji
+    return "☀︎︎"
   } else {
-    return "🌙"; // nighttime with moon emoji
+    return "☾"; // nighttime with moon emoji
   }
 };
 
@@ -89,10 +89,12 @@ export default function App() {
       <div className="Navy">
         <Navbar className="Vadu"/>
       </div>
-      <input className="text-5xl font-bold" type="text" placeholder="Search City" value={city} onChange={e => setCity(e.target.value)} />
-      <button onClick={getdata} className="bg-white text-black">
-        Get Weather
-      </button>
+      <div className="inwrap">
+        <input className="text-5xl uni font-bold" type="text" placeholder="Search City" value={city} onChange={e => setCity(e.target.value)} />
+        <button onClick={getdata} className="bg-white text-black">
+          Go!
+        </button>
+      </div>
       <div className="big-wrap">
         <div className="wrap">
 
@@ -141,14 +143,14 @@ export default function App() {
         <div className="wrap tur">
           {weatherData && (
             <div>
-              <div className="flex items-center gap-2">
+              <div className="flex fahhh items-center gap-2">
                 <h1 className="text-6xl font-bold">
                   {weatherData.name}
                 </h1>
 
-                <span className="text-xl">
+                {/* <span className="text-5xl spatula">
                 {checkDay()}
-                </span>
+                </span> */}
               </div>
             </div>
           )}

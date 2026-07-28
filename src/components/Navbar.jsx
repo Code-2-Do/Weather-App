@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
     return(
         <div>
-            <p className="text-2xl">Feather</p>
+            <img className="heigh" src="src/components/Black_and_White_Minimalist_Simple_Modern_Bold_Typographic_Chic_Logo__1_-removebg-preview.png" />
             <button>About Me</button>
         </div>
     )

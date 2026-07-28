@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root{
-  --color: #111;
+  --color: #fff;
 }
 *{
   margin: 0;
@@ -17,23 +17,40 @@ body{
 body{
   background-color: #111;
   color: var(--color);
-  background-image: url("https://copilot.microsoft.com/th/id/BCO.db4b3c2f-3120-4d67-ad28-10410b22f124.png");
+  background-image: url("src/components/23643966790090249.jpg");
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 input{
   padding: 5px;
+  position: relative;
+  left: 10px;
   margin-top: 10px;
   margin-left: 10px;
-  border: 3px solid black;
-  border-radius: 10px;
+  border: 6px solid #fdf0d5;
+  border-radius: 22px;
+  background-image: linear-gradient(to right, #fdf0d5, #760000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.bg-white{
+  margin-left: 15px;
+  font-family: 'arial';
+  font-weight: 500;
 }
 img{
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+.heigh{
+  height: 20vh;
 }
 button{
   padding: 10px 15px;
@@ -84,11 +101,11 @@ nav>h2{
   justify-content: space-between;
 }
 .Navy{
-  max-height: 10vh;
+  max-height: 20vh;
 }
 .Navy>div>img{
-  padding-top: 6px;
-  max-height: 7vh;
+  padding-left: 5px;
+  max-height: 11vh;
   margin: 0px;
 }
 .Navy>div{
@@ -99,17 +116,24 @@ nav>h2{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35px;
+  height: 30px;
   margin-right: 15px;
-  background-color: black;
+  background-color: #003049;
   color: wheat;
   cursor: pointer;
+  border: 1px solid #fdf0d5;
 }
 button:active{
   scale: 0.9;
 }
 .bruhhhhhhh{
   transition: background-position 0.6s ease-in-out;
+}
+.foot{
+  padding-top: 15px;
+}
+.fahhh{
+  display: flex;
 }
 @media (max-width:480px){
 
@@ -145,6 +169,36 @@ button:active{
 @media (min-width: 950px) and (max-width:1250px) {
    .big-wrap{
     flex-direction: column;
+  }
+  input{
+    position: relative;
+    left: 10px;
+  }
+  .inwrap{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 25px;
+  }
+  .bg-white{
+    position: relative;
+    top: 5px;
+    height: 130px;
+    width: 180px;
+    font-size: 60px;
+  }
+  .Navy>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .big-wrap{
+    position: relative;
+    top: 50px;
+    right: 10px;
+  }
+  .foot{
+    font-size: 50px;
   }
   .font-bold{
       font-size: 100px;
