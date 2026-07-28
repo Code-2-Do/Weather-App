@@ -1,6 +1,7 @@
 import React,{ useState } from "react";
 import axios from "axios";
 import Navbar from "./components/Navbar";
+import background from "./components/23643966790090249.jpg";
 
 export default function App() {
   const [weather, setWeather] = useState(null);
@@ -85,7 +86,12 @@ export default function App() {
   
 
   return (
-    <div className="bruhhhhhhh">
+    <div className="bruhhhhhhh"
+     style={{
+      backgroundImage: `url(${background})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+     }}>
       <div className="Navy">
         <Navbar className="Vadu"/>
       </div>
