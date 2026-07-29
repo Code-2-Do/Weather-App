@@ -155,7 +155,58 @@ button:active{
   .big-wrap{
     flex-direction: column;
   }
-
+  input{
+    position: relative;
+  }
+  .inwrap{
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .bg-white{
+    position: relative;
+    top: 5px;
+    height: 130px;
+    width: 180px;
+    font-size: 60px;
+  }
+  .Navy>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .big-wrap{
+    position: relative;
+    top: 50px;
+    right: 10px;
+  }
+  .foot{
+    font-size: 50px;
+  }
+  .font-bold{
+      font-size: 100px;
+    }
+  .text-6xl{
+    font-size: 100px;
+  }
+  .text-lg{
+    font-size: 50px;
+  }
+  .relative{
+    font-size: 50px;
+  }
+  .text-2xl{
+    font-size: 50px;
+  }
+  button{
+    font-size: 50px;
+  }
+  .Navy>div>button{
+    height: 70px;
+  }
+  .tur{
+    height: 65vh;
+  }
   .wrap{
     width: 90%;
     margin: 20px auto;
@@ -164,9 +215,8 @@ button:active{
     height: auto;
     padding: 20px;
   }
-
 }
-@media (max-width: 1000px) and (pointer: coarse) {
+  @media (max-width: 1000px) and (pointer: coarse) {
   .big-wrap{
     flex-direction: column;
   }
