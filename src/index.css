@@ -166,7 +166,7 @@ button:active{
   }
 
 }
-@media (min-width: 950px) and (max-width:1250px) {
+@media (min-width: 1024px){
    .big-wrap{
     flex-direction: column;
   }
