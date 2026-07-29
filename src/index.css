@@ -166,8 +166,8 @@ button:active{
   }
 
 }
-@media (min-width: 1024px){
-   .big-wrap{
+@media (max-width: 1000px) and (pointer: coarse) {
+  .big-wrap{
     flex-direction: column;
   }
   input{
