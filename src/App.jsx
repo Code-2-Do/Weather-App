@@ -157,7 +157,6 @@ export default function App() {
           <p className="hmmmm">
             {wind !== null ? `Wind: ${wind.speed} m/s` : ""}
           </p>
-          <h1>{window.innerWidth}px</h1>
         </div>
       </div>
     </div>
