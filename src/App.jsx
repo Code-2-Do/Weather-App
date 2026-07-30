@@ -100,7 +100,6 @@ export default function App() {
 
           <div>
             <div className="flex justify-between">
-              <p>
                 {weather && (
                   <div>
                     <img className="relative top-[15px]"
@@ -109,7 +108,6 @@ export default function App() {
                     />
                   </div>
                 )}
-              </p>
               <div className="feel">
                 <p className="text-6xl">
                   {feel !== null ? `${feel}°C` : ""}
