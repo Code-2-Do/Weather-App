@@ -68,20 +68,6 @@ export default function App() {
   }
 };
 
-  useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrTime(
-      new Date().toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-      })
-    );
-  }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   const getWeatherEmoji = (iconCode) => {
     switch (iconCode) {
       case "01d": return "☀️"; // clear sky day
@@ -167,10 +153,9 @@ export default function App() {
               </div>
             </div>
           )}
-          <p className="hmmmm">
-            {wind !== null ? `Wind: ${wind.speed} m/s` : ""}
-          </p>
-          <p className="crow">{currTime}</p>
+            <p className="hmmmm">
+              {wind !== null ? `Wind: ${wind.speed} m/s` : ""}
+            </p>
         </div>
       </div>
     </div>
