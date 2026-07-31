@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React,{ useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "./components/Navbar";
 
@@ -9,6 +9,7 @@ export default function App() {
   const [feel, setFeel] = useState(null);
   const [humidity, setHumid] = useState(null);
   const [city, setCity] = useState(`Bareilly`);
+  const [currTime, setCurrTime] = useState("");
   const [weatherData, setWeatherData] = useState(null);
 
   const getdata = async () => {
@@ -66,6 +67,20 @@ export default function App() {
     return "☾"; // nighttime with moon emoji
   }
 };
+
+  useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrTime(
+      new Date().toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      })
+    );
+  }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const getWeatherEmoji = (iconCode) => {
     switch (iconCode) {
@@ -155,6 +170,7 @@ export default function App() {
           <p className="hmmmm">
             {wind !== null ? `Wind: ${wind.speed} m/s` : ""}
           </p>
+          <p className="crow">{currTime}</p>
         </div>
       </div>
     </div>
